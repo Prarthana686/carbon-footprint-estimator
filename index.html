@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Carbon Footprint Estimator Lite</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1 class="title">🌍 Carbon Footprint Estimator</h1>
+        <p class="subtitle">Turn your <span>digital habits</span> into environmental insight.</p>
+
+        <div class="card">
+            <label>Select Activity</label>
+            <select id="activity">
+                <option value="email">Emails Sent</option>
+                <option value="streaming">Video Streaming (hours)</option>
+                <option value="cloud">Cloud Storage (GB)</option>
+                <option value="video">Video Calls (hours)</option>
+            </select>
+
+            <label>Enter Quantity</label>
+            <input type="number" id="quantity" placeholder="e.g. 100">
+
+            <button onclick="calculate()">Calculate Impact</button>
+        </div>
+
+        <div id="result" class="result hidden"></div>
+
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
